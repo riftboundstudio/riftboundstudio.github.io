@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" data-title-en="Riftbound Studio – Games" data-title-tr="Riftbound Studio – Oyunlar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riftbound Studio – Games</title>
+<meta name="description" content="Riftbound Studio makes small, offline mobile games: RiftKick and Fliprivo.">
+<meta name="theme-color" content="#081431">
+<link rel="icon" type="image/png" href="fliprivo/icon-192.png">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/lang.js"></script>
+<style>
+	/* The studio page: no game's picture behind the title, and one card per game. */
+	.hero.studio { background: radial-gradient(ellipse at 50% 0%, #1d3f8a 0%, var(--bg) 70%); }
+	.studio-name { font-size: clamp(34px, 7vw, 60px); font-weight: 1000; letter-spacing: 1px; margin: 0 0 10px; }
+	.studio-name b { color: var(--gold); }
+	.games { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+	.game { display: flex; flex-direction: column; gap: 14px; }
+	.game .head { display: flex; align-items: center; gap: 14px; }
+	.game .head img { width: 76px; height: 76px; border-radius: 18px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); }
+	.game h3 { margin: 0; font-size: 24px; }
+	.game .tag { margin: 2px 0 0; color: var(--gold); font-weight: 900; font-size: 15px; }
+	.game .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+	.game .links a { padding: 8px 14px; border-radius: 999px; border: 2px solid var(--rim-soft); text-decoration: none; font-weight: 900; color: var(--text); }
+	.game .links a.main { background: var(--gold); border-color: var(--gold); color: #1b1200; }
+	.game .soon { align-self: flex-start; font-size: 13px; font-weight: 900; color: var(--muted); border: 2px dashed var(--rim-soft); border-radius: 999px; padding: 4px 12px; }
+</style>
+</head>
+<body>
+
+<header class="top">
+	<div class="wrap">
+		<a class="brand" href="./"><span>RIFTBOUND <b>STUDIO</b></span></a>
+		<nav class="nav">
+			<a href="./" aria-current="page"><span lang="en">Games</span><span lang="tr">Oyunlar</span></a>
+			<a href="mailto:riftboundstudio@gmail.com"><span lang="en">Contact</span><span lang="tr">İletişim</span></a>
+		</nav>
+		<div class="langs" role="group" aria-label="Language / Dil">
+			<button type="button" data-set-lang="tr">TR</button>
+			<button type="button" data-set-lang="en">EN</button>
+		</div>
+	</div>
+</header>
+
+<main>
+	<div class="hero studio">
+		<div class="wrap">
+			<div class="studio-name">RIFTBOUND <b>STUDIO</b></div>
+			<h1 lang="en">Small games, big moments.</h1>
+			<h1 lang="tr">Küçük oyunlar, büyük anlar.</h1>
+			<p lang="en">We make colourful mobile games you can pick up in seconds and play offline, with no ads and no accounts.</p>
+			<p lang="tr">Saniyeler içinde oynamaya başlayabileceğin, çevrimdışı, reklamsız ve hesap istemeyen renkli mobil oyunlar yapıyoruz.</p>
+		</div>
+	</div>
+
+	<section>
+		<div class="wrap">
+			<h2 lang="en">Our games</h2>
+			<h2 lang="tr">Oyunlarımız</h2>
+			<div class="games">
+
+				<div class="card game">
+					<div class="head">
+						<img src="assets/apple-touch-icon.png" alt="">
+						<div>
+							<h3>RiftKick</h3>
+							<p class="tag" lang="en">Free-kick puzzle game</p>
+							<p class="tag" lang="tr">Frikik bulmaca oyunu</p>
+						</div>
+					</div>
+					<p lang="en">Swipe to curve the ball around the wall and beat smart goalkeepers, from Earth's stadiums to deep space.</p>
+					<p lang="tr">Parmağınla falso çiz, barajı aş ve akıllı kalecileri geç; Dünya stadyumlarından uzaya kadar.</p>
+					<div class="links">
+						<a class="main" href="https://apps.apple.com/app/id6817038228">App Store</a>
+						<a href="riftkick/"><span lang="en">More</span><span lang="tr">Detaylar</span></a>
+						<a href="riftkick/support/"><span lang="en">Support</span><span lang="tr">Destek</span></a>
+						<a href="riftkick/privacy/"><span lang="en">Privacy</span><span lang="tr">Gizlilik</span></a>
+					</div>
+				</div>
+
+				<div class="card game">
+					<div class="head">
+						<img src="fliprivo/apple-touch-icon.png" alt="">
+						<div>
+							<h3>Fliprivo</h3>
+							<p class="tag" lang="en">One-touch car stunts</p>
+							<p class="tag" lang="tr">Tek dokunuşla araba akrobasisi</p>
+						</div>
+					</div>
+					<p lang="en">Drive, flip in mid-air and fly with four thrusters across ten worlds, from the city to the Moon.</p>
+					<p lang="tr">Dört iticiyle sür, havada takla at ve uç; şehirden Ay'a kadar on dünyada.</p>
+					<span class="soon" lang="en">Coming soon to the App Store</span>
+					<span class="soon" lang="tr">Yakında App Store'da</span>
+					<div class="links">
+						<a class="main" href="fliprivo/"><span lang="en">More</span><span lang="tr">Detaylar</span></a>
+						<a href="fliprivo/support/"><span lang="en">Support</span><span lang="tr">Destek</span></a>
+						<a href="fliprivo/privacy/"><span lang="en">Privacy</span><span lang="tr">Gizlilik</span></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer>
+	<div class="wrap">
+		<span>© 2026 Riftbound Studio</span>
+		<a class="sp" href="mailto:riftboundstudio@gmail.com">riftboundstudio@gmail.com</a>
+	</div>
+</footer>
+
+</body>
+</html>
